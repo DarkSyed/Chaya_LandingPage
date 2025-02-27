@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaya - Inventory Automation for Restaurants & Businesses</title>
+    <meta
+      name="description"
+      content="Chaya helps restaurants and businesses automate inventory management, reduce waste, and increase profitability."
+    />
+    <link rel="stylesheet" href="globals.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1>Chaya</h1>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+          Toggle Dark Mode
+        </button>
+      </div>
+    </nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const toggleButton = document.getElementById("dark-mode-toggle");
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
